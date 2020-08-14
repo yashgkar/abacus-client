@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex">
+  <title>Japanese Abacus</title>
+  <link rel="stylesheet" href="./files/default.css" type="text/css">
+  <script src="./files/abacus.js"></script>
+</head>
+
+<body oncontextmenu="return false;" data-gr-c-s-loaded="true">
+
+  <div>
+    Rails: <input id="abacus_rails" type="number" min="1" value="15">
+    <input id="teach" type="submit" value="Teach">
+    <input id="clear" type="submit" value="Clear">
+    <input id="complement" type="submit" value="Complement">
+    <input id="undo" type="submit" value="Undo">
+    <input id="redo" type="submit" value="Redo">
+  </div>
+  <br>
+  <article id="abacus_article" data-format="Japanese" data-rails="15" data-righttoleftadd="0" data-righttoleftmult="0">
+  </article>
+
+  <script>
+    initAbacus(null, document.getElementById("abacus_span"), document.getElementById("abacus_rails"));
+  </script>
+</body>
+
+</html>
